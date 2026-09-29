@@ -1,25 +1,135 @@
-/* スライダー内の画像サイズを調整 */
-.splide__slide img {
-  width: 100%;
-  max-height: 250px;    /* ← お好みの高さに調整してください（例: 200px〜300px） */
-  object-fit: contain;  /* 画像の比率を崩さずに枠内に収める */
+/*======
+全体
+========*/
+*{
+  box-sizing: border-box;
+}
+
+html{
+  scroll-behavior: smooth; /*リンクをクリックしたときのスクロールを滑らかにする*/
+}
+
+body{
+  margin: 0;
+  background: #ffffff; /*背景色*/
+  color: #555;         /*文字色*/
+  /*font: ;*/
+  line-height: 1.8;       /*行間*/
+}
+
+img{
+  max-width: 100%;        /*親要素から画像がはみ出さないようにする*/
   display: block;
-  margin: 0 auto;       /* 画像を中央寄せ */
 }
 
-/* スライドごとの高さやレイアウトを整える設定です */
+a{
+  color: inherit;          /*リンクの文字色を親要素の文字色に合わせる*/
+  text-decoration: none;   /*リンクの下線を消す*/
+}
+
+/*======
+ヘッダーーーーーーーーー！！！！！
+========*/
+.header{
+  position: sticky;         /*スクロールしても上部にヘッダーを残す*/
+  top: 0;                   /*一番上に固定*/
+  z-index: 1000;            /*ヘッダーをほかの要素より上に出す*/
+  display: flex;            /*ヘッダーの要素を横並びにする*/
+  align-items: center;      /*縦方向の位置を中央にする*/
+  justify-content: space-between;
+  width: 100%;              /*ヘッダーの横幅を画面いっぱいにする*/
+  height: 70px;             /*高さ*/
+  padding: 0 3%;            /*左右に余白を作る*/
+  background: #ffffff;
+  /*border-bottom: 5px solid #e8eee9;*/
+
+}
+
+
+/*ヘッダーのタイトル部分*/
+
+.humstar{
+  margin: 0;
+  padding: 0;
+  font-size: 37px;
+  font-weight: 700;
+}
+
+.nav{
+  margin-left: auto;
+}
+
+.header-nav{
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  margin: 0;
+  padding: 0;
+  list-style: none;         /*リンク横の・を消す*/
+  white-space: nowrap;
+}
+
+.header-nav a{
+  position: relative;
+  font-size: 20px;
+  font-weight: 500;
+  transition: color 0.2s ease; /*マウスを乗せたときに色がゆっくり変化する*/
+}
+
+
+/*ヘッダーリンクホバー*/
+.header-nav a:hover{
+  color: #4da996;
+}
+
+
+/*リンクの下線を隠しておく*/
+.header-nav a::after{
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 0;
+  height: 2px;
+  background: #77c5b3;
+  border-radius: 10px;
+  transition: width 0.2s ease;
+}
+
+
+/*マウスを乗せたら下線を伸ばす*/
+.header-nav a:hover::after {
+    width: 100%;
+}
+
+
+/*======
+スライダー
+========*/
+/* スライダー全体 */
+.splide {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+
+/* スライド */
 .splide__slide {
-  text-align: center;   /* キャプション文字を中央寄せ */
+    text-align: center;
 }
 
+/* スライダー内の画像 */
+.splide__slide img {
+    width: 100%;
+    max-height: 250px;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto;
+}
+
+
+/* 画像の下のキャプション */
 .splide__slide div {
-  font-size: 0.85rem;   /* 画像下のテキストサイズ調整 */
-  margin-top: 6px;
-  color: #666;
-}
-
-/* カルーセル全体の最大幅を制限して中央寄せ */
-#image-carousel {
-  max-width: 400px;   /* ← お好みの幅（例: 300px〜400pxなど）に設定 */
-  margin: 0 auto;     /* 中央に配置 */
+    font-size: 0.85rem;
+    margin-top: 6px;
 }
