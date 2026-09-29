@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="utf-8">
+        <title>Humstar Life</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
+        <!-- Splideを初期化 -->
+        <script>
+            document.addEventListener( 'DOMContentLoaded', function () {
+            new Splide( '#image-carousel' ).mount();
+             } );
+        </script>
+    </head>
+    <body>
+
+        <header class="header">
+            <h1 class="humstar"><a href="#top">Humstar Life</a></h1>
+            <nav class="nav">
+                <ul class="header-nav">
+                    <li><a href="#type">ハムスターの種類</a></li>
+                    <li><a href="#breeding">飼育方法</a></li>
+                    <li><a href="#my-humstar">うちのハムスター</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- トップ画面 -->
+        <div id="top"class="top">
+            <h1>Humstar Life</h1>
+            <p>ハムスターの種類と暮らし</p>
+            <img src="images/top-hamster.png" alt="トップ画面のハムスター">
+        </div>
+
+        <!-- ハムスターの種類 -->
+        <div id="type"class="type">
+            <h2>ハムスターの種類</h2>
+            <p>それぞれに違った魅力がある、かわいいハムスターたちを紹介します♪</p>
+
+            <!-- ゴールデンハムスター-->
+             <article class="card">
+                <figure class="card_img">
+                    <img src="images/ゴールデンハムスター.jpg" alt="ゴールデンハムスター">
+                </figure>
+                <h3 class="card_title">ゴールデンハムスター</h3>
+                <dl class="card_meta">
+                    <dt>体長</dt><dd>約15cm～20cm</dd>
+                    <dt>体重</dt><dd>150g前後</dd>
+                    <dt>寿命</dt><dd>2～3年</dd>
+                    <dt>性格</dt><dd>温和でなつきやすい</dd>
+                </dl>
+                <!-- 飼育方法へ飛ばすボタン -->
+                 <a href="#golden" class="button">飼育方法を見る</a>
+             </article>
+
+            <!-- ジャンガリアンハムスター-->
+             <article class="card">
+                <figure class="card_img">
+                    <img src="images/ジャンガリアンハムスター.jpg" alt="ジャンガリアンハムスター">
+                </figure>
+                <h3 class="card_title">ジャンガリアンハムスター</h3>
+                <dl class="card_meta">
+                    <dt>体長</dt><dd>約7cm～10cm</dd>
+                    <dt>体重</dt><dd>35g前後</dd>
+                    <dt>寿命</dt><dd>2～3年</dd>
+                    <dt>性格</dt><dd>活発・好奇心旺盛</dd>
+                </dl>
+                <!-- 飼育方法へ飛ばすボタン -->
+                 <a href="#djungarian" class="button">飼育方法を見る</a>
+             </article>
+
+            <!-- ロボロフスキーハムスター -->
+             <article class="card">
+                <figure class="card_img">
+                    <img src="images/ロボロフスキーハムスター.jpg" alt="ロボロフスキーハムスター">
+                </figure>
+                <h3 class="card_title">ロボロフスキーハムスター</h3>
+                <dl class="card_meta">
+                    <dt>体長</dt><dd>約6cm～8cm</dd>
+                    <dt>体重</dt><dd>25g前後</dd>
+                    <dt>寿命</dt><dd>2～2.5年</dd>
+                    <dt>性格</dt><dd>警戒心が強い</dd>
+                </dl>
+                <!-- 飼育方法へ飛ばすボタン -->
+                 <a href="#roborovsky" class="button">飼育方法を見る</a>
+             </article>
+
+            <!-- キャンベルハムスター -->
+             <article class="card">
+                <figure class="card_img">
+                    <img src="images/キャンベルハムスター.jpg" alt="キャンベルハムスター">
+                </figure>
+                <h3 class="card_title">キャンベルハムスター</h3>
+                <dl class="card_meta">
+                    <dt>体長</dt><dd>約7cm～10cm</dd>
+                    <dt>体重</dt><dd>35g前後</dd>
+                    <dt>寿命</dt><dd>2～2.5年</dd>
+                    <dt>性格</dt><dd>気が強いが臆病</dd>
+                </dl>
+                <!-- 飼育方法へ飛ばすボタン -->
+                 <a href="#Campbell's" class="button">飼育方法を見る</a>
+             </article>
+        </div>
+
+        <!-- ハムスターの飼育方法 -->
+        <div id="breeding"class="breeding">
+            <h2>ハムスターの飼育方法</h2>
+            <p>ハムスターを健康に長く育てるために、基本的な飼育方法を紹介します</p>
+
+            <!-- 飼育のキホン -->
+             <section class="care">
+                <h3>すべてのハムスターに共通する飼育のキホン</h3>
+                <p>どの種類を飼う場合でも、まずは以下のつのキホン環境を整えてあげましょう。</p>
+                <dl class="care-meta">
+                    <dt>飼育環境</dt><dd>環境の変化に慣れさせるために、最初の2～3日は触らないようにしましょう。ケージに布を掛けると、ハムスターが安心して過ごせるのでお勧めです。</dd>
+                    <dt>必要なグッズ</dt><dd>ゲージ、回し車、給水器、エサ皿、巣箱、床材、トイレとトイレ砂</dd>
+                    <dt>毎日の食事</dt><dd>主食にはハムスター専用のペレットや乾燥した野菜が適しています。水分を含むものはキッチンペーパー等で水分を取るか、極力避けましょう。ヒマワリの種などの種実類は脂肪分が高いため、おやつ程度に留めます。また、給水器の水は毎日取り換えましょう。</dd>
+                    <dt>温度管理</dt><dd>適温は20℃～26℃です。寒さや暑さに非常に弱いため、エアコンや小動物用ヒーターでの24時間管理が必須です。</dd>
+                    <dt>注意点</dt><dd>無理に触ったり追いかけないようにしましょう。懐かせようとして無理に捕まえようとすると、恐怖で人間に怯えるようになってしまいます。急に動いたり、大きな音を出したりしないようにしましょう。ケージの近くで急に動いたり、大きな声を出したりするとパニックを起こすことがあります。</dd>
+                </dl>
+             </section>
+
+            <!-- 種類別の飼育方法(飼育方法を見るのジャンプ先) -->
+             <h3>種類別の飼育ポイント</h3>
+             <p>それぞれの個性に合わせたお世話をしましょう！</p>
+
+            <!-- ゴールデンハムスター -->
+             <div id="golden" class="care">
+                <h4>ゴールデンハムスターの飼育ポイント</h4>
+                <dl class="care-meta">
+                    <dt>ゲージサイズ</dt><dd>体が大きいため、幅60cm以上の広めのケージが必要です。</dd>
+                    <dt>お世話のコツ</dt><dd>縄張り意識が非常に強いため、必ず「1匹ずつ単独」で飼育します。</dd>
+                    <dt>なつかせ方</dt><dd>おっとりした性格なので、おやつを手から与えると早く仲良くなれるかも...？</dd>
+                </dl>
+             </div>
+
+            <!-- ジャンガリアンハムスター -->
+             <div id="djungarian" class="care">
+                <h4>ジャンガリアンハムスターの飼育ポイント</h4>
+                <dl class="care-meta">
+                    <dt>ゲージサイズ</dt><dd>一般的なハムスター用ケージ（幅45cm程度〜）で飼育可能です。</dd>
+                    <dt>お世話のコツ</dt><dd>基本は単独飼育。寒さに少し弱いので、冬場のヒーター対策が大切です。</dd>
+                    <dt>なつかせ方</dt><dd>比較的おとなしいですが、臆病な面もあるため最初は静かに見守りましょう。</dd>
+                </dl>
+             </div>
+
+            <!-- ロボロフスキーハムスター -->
+             <div id="roborovski" class="care">
+                <h4>ロボロフスキーハムスターの飼育ポイント</h4>
+                <dl class="care-meta">
+                    <dt>ゲージサイズ</dt><dd>体が小さいですが非常によく動くため、少し広めが理想です。</dd>
+                    <dt>お世話のコツ</dt><dd>すばしっこく脱走しやすいため、ケージの隙間の幅に注意します。</dd>
+                    <dt>なつかせ方</dt><dd>非常に臆病で観賞向きの種類です。手の上に乗せるなどの無理な接触は控えます。</dd>
+                </dl>
+             </div>
+
+            <!-- キャンベルハムスター -->
+             <div id="Campbell's" class="care">
+                <h4>キャンベルハムスターの飼育ポイント</h4>
+                <dl class="care-meta">
+                    <dt>ゲージサイズ</dt><dd>ジャンガリアン同様、標準的なサイズ（幅45cm程度〜）で問題ありません。</dd>
+                    <dt>お世話のコツ</dt><dd>野生味が強く噛みつきやすいため、手袋を用意しておくと安心です。</dd>
+                    <dt>なつかせ方</dt><dd>無理に触ろうとせず、時間をかけて環境と人の声に慣れさせます。</dd>
+                </dl>
+             </div>
+
+        </div>
+
+        <!-- うちのハムスター -->
+        <div id="my-humstar" class="my-humstar">
+            <h2>うちのハムスター</h2>
+            <p>私が飼っているハムスターを紹介します♫</p>
+
+            <!-- まめ -->
+             <div class="my-humstar-list">
+                <article class="my-humstar-card">
+                    <h3 class="my-humstar_title">まめ（2025.4～）</h3>
+                    <!-- 画像スライダー -->
+                    <section id="image-carousel" class="splide" aria-label="まめの写真">
+                        <div class="splide__track">
+                            <ul class="splide__list">
+                                <li class="splide__slide"><img src="images/しがみつき.jpg" alt="まめ_しがみつき"><div>しがみつき</div></li>
+                                <li class="splide__slide"><img src="images/ほうれん草.jpg" alt="まめ_ほうれん草"><div>ほうれん草</div></li>
+                                <li class="splide__slide"><img src="images/キャベツ.jpg" alt="まめ_キャベツ"><div>キャベツ</div></li>
+                                <li class="splide__slide"><img src="images/マヌケな寝顔.jpg" alt="まめ_マヌケな寝顔"><div>マヌケな寝顔</div></li>
+                                <li class="splide__slide"><img src="images/伸びるまめ.jpg" alt="まめ_伸びるまめ"><div>伸びるまめ</div></li>
+                            </ul>
+                        </div>
+                    </section>
+
+                    <dl class="my-humstar_meta">
+                        <dt>性別</dt><dd>男の子</dd>
+                        <dt>種類</dt><dd>ゴールデンハムスター（キンクマ）</dd>
+                        <dt>性格</dt><dd>基本的に爆睡。いろんな場所で寝る。寝顔がマヌケ。餌をもらっても「もらってないけど？」みたいな顔をする貪欲ハムスター。</dd>
+                        <dt>好物</dt><dd>豆腐、ドライフルーツ、野菜</dd>
+                        <dt>苦手</dt><dd>ペレット（必ず残す）</dd>
+                    </dl>
+                </article>
+             </div>
+            <!-- くろ -->
+             <div class="my-humsutar-list">
+                <article class="my-humstar-card">
+                    <h3 class="my-humstar-title">くろ（2023.3～2025.4）</h3>
+                    <!-- 画像スライダー -->
+                     <section id="image-carousel" class="splide" aria-label="くろの写真">
+                        <div class="splide__track">
+                            <ul class="splide__list">
+                                <li class="splide__slide"><img src="" alt=""><div></div></li>
+                                <li class="splide__slide"><img src="" alt=""><div></div></li>
+                                <li class="splide__slide"><img src="" alt=""><div></div></li>
+                                <li class="splide__slide"><img src="" alt=""><div></div></li>
+                                <li class="splide__slide"><img src="" alt=""><div></div></li>
+                            </ul>
+                        </div>
+                     </section>
+
+                     <dl class="my-humstar_meta">
+                        <dt>性別</dt><dd>女の子</dd>
+                        <dt>種類</dt><dd>ゴールデンハムスター（クロクマ）</dd>
+                        <dt>性格</dt><dd>出不精ハムスター。エサの時間以外滅多に外に出てこない。</dd>
+                        <dt>好物</dt><dd>豆腐、煮干し</dd>
+                        <dt>苦手</dt><dd></dd>
+                     </dl>
+                </article>
+             </div>
+
+            <!-- ちょび -->
+             <div class="my-humstar-list">
+                <article class="my-humstar-card">
+                    <h3 class="my-humstar-title">ちょび（～2023.3）</h3>
+                    <!-- 画像スライダー -->
+                     <section id="image-carousel" class="splide" aria-label="ちょびの写真">
+                         <div class="splide__track">
+                             <ul class="splide__list">
+                                 <li class="splide__slide"><img src="" alt=""><div></div></li>
+                                 <li class="splide__slide"><img src="" alt=""><div></div></li>
+                                 <li class="splide__slide"><img src="" alt=""><div></div></li>
+                                 <li class="splide__slide"><img src="" alt=""><div></div></li>
+                                 <li class="splide__slide"><img src="" alt=""><div></div></li>
+                             </ul>
+                         </div>
+                     </section> 
+
+                     <dl class="my-humstar_meta">
+                        <dt>性別</dt><dd>女の子</dd>
+                        <dt>種類</dt><dd>ゴールデンハムスター（キンクマ）</dd>
+                        <dt>性格</dt><dd>出不精ハムスター。エサの時間以外滅多に外に出てこない。</dd>
+                        <dt>好物</dt><dd>豆腐、煮干し</dd>
+                        <dt>苦手</dt><dd></dd>
+                     </dl>
+                </article>
+             </div>
+
+            <!-- ころ -->
+             <div class="my-humstar-list">
+                <article class="my-humstar-card">
+                    <h3 class="my-humstar-title">ころ（～）</h3>
+                    <!-- 画像スライダー -->
+                     <section id="image-carousel" class="splide" aria-label="ころの写真">
+                        <div class="splide__track">
+                            <ul class="splide__list">
+                                <li class="splide__slide"><img src="" alt=""><div></div></li>
+                                <li class="splide__slide"><img src="" alt=""><div></div></li>
+                                <li class="splide__slide"><img src="" alt=""><div></div></li>
+                                <li class="splide__slide"><img src="" alt=""><div></div></li>
+                                <li class="splide__slide"><img src="" alt=""><div></div></li>
+                            </ul>
+                        </div>
+                     </section>
+
+                     <dl class="my-humstar_meta">
+                        <dt>性別</dt><dd>女の子</dd>
+                        <dt>種類</dt><dd>ゴールデンハムスター（キンクマ）</dd>
+                        <dt>性格</dt><dd>出不精ハムスター。エサの時間以外滅多に外に出てこない。</dd>
+                        <dt>好物</dt><dd>豆腐、煮干し</dd>
+                        <dt>苦手</dt><dd></dd>
+                     </dl>
+                </article>  
+             </div>
+            
+        </div>
+        
+    </body>
+</html>
