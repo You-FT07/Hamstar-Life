@@ -6,11 +6,14 @@
         <link rel="stylesheet" href="style.css">
         <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
-        <!-- Splideを初期化 -->
+        <!-- 画像スライダーを初期化 -->
         <script>
-            document.addEventListener( 'DOMContentLoaded', function () {
-            new Splide( '#image-carousel' ).mount();
-             } );
+            document.addEventListener('DOMContentLoaded', function () {
+                new Splide('#image-carousel-mame').mount();     //まめ
+                new Splide('#image-carousel-kuro').mount();     //くろ
+                new Splide('#image-carousel-chobi').mount();    //ちょび
+                new Splide('#image-carousel-koro').mount();     //ころ
+            });
         </script>
     </head>
     <body>
@@ -27,7 +30,7 @@
         </header>
 
         <!-- トップ画面 -->
-        <div id="top"class="top">
+        <div id="top" class="top">
             <h1>Humstar Life</h1>
             <p>ハムスターの種類と暮らし</p>
             <img src="images/top-hamster.png" alt="トップ画面のハムスター">
@@ -83,7 +86,7 @@
                     <dt>性格</dt><dd>警戒心が強い</dd>
                 </dl>
                 <!-- 飼育方法へ飛ばすボタン -->
-                 <a href="#roborovsky" class="button">飼育方法を見る</a>
+                 <a href="#roborovski" class="button">飼育方法を見る</a>
              </article>
 
             <!-- キャンベルハムスター -->
@@ -104,14 +107,14 @@
         </div>
 
         <!-- ハムスターの飼育方法 -->
-        <div id="breeding"class="breeding">
+        <div id="breeding" class="breeding">
             <h2>ハムスターの飼育方法</h2>
             <p>ハムスターを健康に長く育てるために、基本的な飼育方法を紹介します</p>
 
             <!-- 飼育のキホン -->
              <section class="care">
                 <h3>すべてのハムスターに共通する飼育のキホン</h3>
-                <p>どの種類を飼う場合でも、まずは以下のつのキホン環境を整えてあげましょう。</p>
+                <p>どの種類を飼う場合でも、まずは以下の5つのキホン環境を整えてあげましょう。</p>
                 <dl class="care-meta">
                     <dt>飼育環境</dt><dd>環境の変化に慣れさせるために、最初の2～3日は触らないようにしましょう。ケージに布を掛けると、ハムスターが安心して過ごせるのでお勧めです。</dd>
                     <dt>必要なグッズ</dt><dd>ゲージ、回し車、給水器、エサ皿、巣箱、床材、トイレとトイレ砂</dd>
@@ -129,7 +132,7 @@
              <div id="golden" class="care">
                 <h4>ゴールデンハムスターの飼育ポイント</h4>
                 <dl class="care-meta">
-                    <dt>ゲージサイズ</dt><dd>体が大きいため、幅60cm以上の広めのケージが必要です。</dd>
+                    <dt>ケージサイズ</dt><dd>体が大きいため、幅60cm以上の広めのケージが必要です。</dd>
                     <dt>お世話のコツ</dt><dd>縄張り意識が非常に強いため、必ず「1匹ずつ単独」で飼育します。</dd>
                     <dt>なつかせ方</dt><dd>おっとりした性格なので、おやつを手から与えると早く仲良くなれるかも...？</dd>
                 </dl>
@@ -139,7 +142,7 @@
              <div id="djungarian" class="care">
                 <h4>ジャンガリアンハムスターの飼育ポイント</h4>
                 <dl class="care-meta">
-                    <dt>ゲージサイズ</dt><dd>一般的なハムスター用ケージ（幅45cm程度〜）で飼育可能です。</dd>
+                    <dt>ケージサイズ</dt><dd>一般的なハムスター用ケージ（幅45cm程度〜）で飼育可能です。</dd>
                     <dt>お世話のコツ</dt><dd>基本は単独飼育。寒さに少し弱いので、冬場のヒーター対策が大切です。</dd>
                     <dt>なつかせ方</dt><dd>比較的おとなしいですが、臆病な面もあるため最初は静かに見守りましょう。</dd>
                 </dl>
@@ -149,7 +152,7 @@
              <div id="roborovski" class="care">
                 <h4>ロボロフスキーハムスターの飼育ポイント</h4>
                 <dl class="care-meta">
-                    <dt>ゲージサイズ</dt><dd>体が小さいですが非常によく動くため、少し広めが理想です。</dd>
+                    <dt>ケージサイズ</dt><dd>体が小さいですが非常によく動くため、少し広めが理想です。</dd>
                     <dt>お世話のコツ</dt><dd>すばしっこく脱走しやすいため、ケージの隙間の幅に注意します。</dd>
                     <dt>なつかせ方</dt><dd>非常に臆病で観賞向きの種類です。手の上に乗せるなどの無理な接触は控えます。</dd>
                 </dl>
@@ -159,7 +162,7 @@
              <div id="Campbell's" class="care">
                 <h4>キャンベルハムスターの飼育ポイント</h4>
                 <dl class="care-meta">
-                    <dt>ゲージサイズ</dt><dd>ジャンガリアン同様、標準的なサイズ（幅45cm程度〜）で問題ありません。</dd>
+                    <dt>ケージサイズ</dt><dd>ジャンガリアン同様、標準的なサイズ（幅45cm程度〜）で問題ありません。</dd>
                     <dt>お世話のコツ</dt><dd>野生味が強く噛みつきやすいため、手袋を用意しておくと安心です。</dd>
                     <dt>なつかせ方</dt><dd>無理に触ろうとせず、時間をかけて環境と人の声に慣れさせます。</dd>
                 </dl>
@@ -177,7 +180,7 @@
                 <article class="my-humstar-card">
                     <h3 class="my-humstar_title">まめ（2025.4～）</h3>
                     <!-- 画像スライダー -->
-                    <section id="image-carousel" class="splide" aria-label="まめの写真">
+                    <section id="image-carousel-mame" class="splide" aria-label="まめの写真">
                         <div class="splide__track">
                             <ul class="splide__list">
                                 <li class="splide__slide"><img src="images/しがみつき.jpg" alt="まめ_しがみつき"><div>しがみつき</div></li>
@@ -199,11 +202,11 @@
                 </article>
              </div>
             <!-- くろ -->
-             <div class="my-humsutar-list">
+             <div class="my-humstar-list">
                 <article class="my-humstar-card">
                     <h3 class="my-humstar-title">くろ（2023.3～2025.4）</h3>
                     <!-- 画像スライダー -->
-                     <section id="image-carousel" class="splide" aria-label="くろの写真">
+                     <section id="image-carousel-kuro" class="splide" aria-label="くろの写真">
                         <div class="splide__track">
                             <ul class="splide__list">
                                 <li class="splide__slide"><img src="" alt=""><div></div></li>
@@ -230,7 +233,7 @@
                 <article class="my-humstar-card">
                     <h3 class="my-humstar-title">ちょび（～2023.3）</h3>
                     <!-- 画像スライダー -->
-                     <section id="image-carousel" class="splide" aria-label="ちょびの写真">
+                     <section id="image-carousel-chobi" class="splide" aria-label="ちょびの写真">
                          <div class="splide__track">
                              <ul class="splide__list">
                                  <li class="splide__slide"><img src="" alt=""><div></div></li>
@@ -257,7 +260,7 @@
                 <article class="my-humstar-card">
                     <h3 class="my-humstar-title">ころ（～）</h3>
                     <!-- 画像スライダー -->
-                     <section id="image-carousel" class="splide" aria-label="ころの写真">
+                     <section id="image-carousel-koro" class="splide" aria-label="ころの写真">
                         <div class="splide__track">
                             <ul class="splide__list">
                                 <li class="splide__slide"><img src="" alt=""><div></div></li>
