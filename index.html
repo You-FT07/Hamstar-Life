@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ja">
     <head>
-        <meta charset="utf-8">
+        <meta charset="UTF-8">
         <title>Humstar Life</title>
         <link rel="stylesheet" href="style.css">
         <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
@@ -22,13 +22,15 @@
     </head>
     <body>
 
+        <!-- ヘッダー -->
         <header class="header">
-            <h1 class="humstar"><a href="#top">Humstar Life</a></h1>
+            <h1 class="title-logo"><a href="#top">Humstar Life</a></h1>
             <nav class="nav">
-                <ul class="header-nav">
+                <ul class="nav-list">
                     <li><a href="#type">ハムスターの種類</a></li>
                     <li><a href="#breeding">飼育方法</a></li>
                     <li><a href="#my-humstar">うちのハムスター</a></li>
+                    <li><a href="#SNS">おすすめSNS</a></li>
                 </ul>
             </nav>
         </header>
@@ -37,159 +39,161 @@
         <div id="top" class="top">
             <h1>Humstar Life</h1>
             <p>ハムスターの種類と暮らし</p>
-            <img src="images/top-hamster.png" alt="トップ画面のハムスター">
+            <img src="images/top-hamster.png" alt="トップ画面のハムスターの画像">
         </div>
 
         <!-- ハムスターの種類 -->
-        <div id="type" class="type">
-            <h2>ハムスターの種類</h2>
+        <section id="type" class="type">
+            <h1>ハムスターの種類</h1>
             <p>それぞれに違った魅力がある、かわいいハムスターたちを紹介します♪</p>
 
-            <div class="card_list">
-            <!-- ゴールデンハムスター-->
-             <article class="card">
-                <figure class="card_img">
-                    <img src="images/ゴールデンハムスター.jpg" alt="ゴールデンハムスター">
-                </figure>
-                <h3 class="card_title">ゴールデンハムスター</h3>
-                <dl class="card_meta">
-                    <dt>体長</dt><dd>約15cm～20cm</dd>
-                    <dt>体重</dt><dd>150g前後</dd>
-                    <dt>寿命</dt><dd>2～3年</dd>
-                    <dt>性格</dt><dd>温和でなつきやすい</dd>
-                </dl>
-                <!-- 飼育方法へ飛ばすボタン -->
-                 <a href="#golden" class="button">飼育方法を見る</a>
-             </article>
+            <div class="card-list">
+                <!-- ゴールデンハムスター -->
+                 <article class="card">
+                    <figure class="card-img">
+                        <img src="images/ゴールデンハムスター.jpg" alt="ゴールデンハムスター">
+                    </figure>
+                    <h2 class="card-title">ゴールデンハムスター</h2>
+                    <dl class="card-meta">
+                        <dt>体長</dt><dd>約15cm～20cm</dd>
+                        <dt>体重</dt><dd>150g前後</dd>
+                        <dt>寿命</dt><dd>2～3年</dd>
+                        <dt>性格</dt><dd>温和でなつきやすい</dd>
+                    </dl>
+                    <!-- 飼育方法へ飛ばすボタン -->
+                    <a href="#golden" class="button">飼育方法を見る</a>
+                 </article>
+                
+                <!-- ジャンガリアンハムスター -->
+                <article class="card">
+                    <figure class="card-img">
+                        <img src="images/ジャンガリアンハムスター.jpg" alt="ジャンガリアンハムスター">
+                    </figure>
+                    <h2 class="card-title">ジャンガリアンハムスター</h2>
+                    <dl class="card-meta">
+                        <dt>体長</dt><dd>約7cm～10cm</dd>
+                        <dt>体重</dt><dd>35g前後</dd>
+                        <dt>寿命</dt><dd>2～3年</dd>
+                        <dt>性格</dt><dd>活発・好奇心旺盛</dd>
+                    </dl>
+                    <!-- 飼育方法へ飛ばすボタン -->
+                    <a href="#djungarian" class="button">飼育方法を見る</a>
+                </article>
 
-            <!-- ジャンガリアンハムスター-->
-             <article class="card">
-                <figure class="card_img">
-                    <img src="images/ジャンガリアンハムスター.jpg" alt="ジャンガリアンハムスター">
-                </figure>
-                <h3 class="card_title">ジャンガリアンハムスター</h3>
-                <dl class="card_meta">
-                    <dt>体長</dt><dd>約7cm～10cm</dd>
-                    <dt>体重</dt><dd>35g前後</dd>
-                    <dt>寿命</dt><dd>2～3年</dd>
-                    <dt>性格</dt><dd>活発・好奇心旺盛</dd>
-                </dl>
-                <!-- 飼育方法へ飛ばすボタン -->
-                 <a href="#djungarian" class="button">飼育方法を見る</a>
-             </article>
+                <!-- ロボロフスキーハムスター -->
+                <article class="card">
+                    <figure class="card-img">
+                        <img src="images/ロボロフスキーハムスター.jpg" alt="ロボロフスキーハムスター">
+                    </figure>
+                    <h2 class="card-title">ロボロフスキーハムスター</h2>
+                    <dl class="card-meta">
+                        <dt>体長</dt><dd>約6cm～8cm</dd>
+                        <dt>体重</dt><dd>25g前後</dd>
+                        <dt>寿命</dt><dd>2～2.5年</dd>
+                        <dt>性格</dt><dd>警戒心が強い</dd>
+                    </dl>
+                    <!-- 飼育方法へ飛ばすボタン -->
+                    <a href="#roborovski" class="button">飼育方法を見る</a>
+                </article>
 
-            <!-- ロボロフスキーハムスター -->
-             <article class="card">
-                <figure class="card_img">
-                    <img src="images/ロボロフスキーハムスター.jpg" alt="ロボロフスキーハムスター">
-                </figure>
-                <h3 class="card_title">ロボロフスキーハムスター</h3>
-                <dl class="card_meta">
-                    <dt>体長</dt><dd>約6cm～8cm</dd>
-                    <dt>体重</dt><dd>25g前後</dd>
-                    <dt>寿命</dt><dd>2～2.5年</dd>
-                    <dt>性格</dt><dd>警戒心が強い</dd>
-                </dl>
-                <!-- 飼育方法へ飛ばすボタン -->
-                 <a href="#roborovski" class="button">飼育方法を見る</a>
-             </article>
-
-            <!-- キャンベルハムスター -->
-             <article class="card">
-                <figure class="card_img">
-                    <img src="images/キャンベルハムスター.jpg" alt="キャンベルハムスター">
-                </figure>
-                <h3 class="card_title">キャンベルハムスター</h3>
-                <dl class="card_meta">
-                    <dt>体長</dt><dd>約7cm～10cm</dd>
-                    <dt>体重</dt><dd>35g前後</dd>
-                    <dt>寿命</dt><dd>2～2.5年</dd>
-                    <dt>性格</dt><dd>気が強いが臆病</dd>
-                </dl>
-                <!-- 飼育方法へ飛ばすボタン -->
-                 <a href="#Campbell's" class="button">飼育方法を見る</a>
-             </article>
-             </div>
-        </div>
+                <!-- キャンベルハムスター -->
+                <article class="card">
+                    <figure class="card-img">
+                        <img src="images/キャンベルハムスター.jpg" alt="キャンベルハムスター">
+                    </figure>
+                    <h2 class="card-title">キャンベルハムスター</h2>
+                    <dl class="card-meta">
+                        <dt>体長</dt><dd>約7cm～10cm</dd>
+                        <dt>体重</dt><dd>35g前後</dd>
+                        <dt>寿命</dt><dd>2～2.5年</dd>
+                        <dt>性格</dt><dd>気が強いが臆病</dd>
+                    </dl>
+                    <!-- 飼育方法へ飛ばすボタン -->
+                    <a href="#campbell" class="button">飼育方法を見る</a>
+                </article>
+            </div>
+        </section>
 
         <!-- ハムスターの飼育方法 -->
-        <div id="breeding" class="breeding">
-            <h2>ハムスターの飼育方法</h2>
+        <section id="breeding" class="breeding">
+            <h1>ハムスターの飼育方法</h1>
             <p>ハムスターを健康に長く育てるために、基本的な飼育方法を紹介します</p>
 
-            <div class="breedeing-basic">
-            <!-- 飼育のキホン -->
-             <h3>すべてのハムスターに共通する飼育のキホン</h3>
-             <p>どの種類を飼う場合でも、まずは以下の5つのキホン環境を整えてあげましょう。</p>
+            <!-- 全てのハムスターに共通する飼育方法 -->
+            <div class="breeding-text">
+                <h2>すべてのハムスターに共通する飼育の基本</h2>
+                <p>どの種類を飼う場合でも、まずは以下の5つの環境を整えてあげましょう。</p>
             </div>
-             <section class="care">
-                <dl class="care-meta">
+            <!-- 飼育方法のカード -->
+            <article class="breeding-card">
+                <dl class="breeding-meta">
                     <dt>飼育環境</dt><dd>環境の変化に慣れさせるために、最初の2～3日は触らないようにしましょう。ケージに布を掛けると、ハムスターが安心して過ごせるのでお勧めです。</dd>
                     <dt>必要なグッズ</dt><dd>ゲージ、回し車、給水器、エサ皿、巣箱、床材、トイレとトイレ砂</dd>
                     <dt>毎日の食事</dt><dd>主食にはハムスター専用のペレットや乾燥した野菜が適しています。水分を含むものはキッチンペーパー等で水分を取るか、極力避けましょう。ヒマワリの種などの種実類は脂肪分が高いため、おやつ程度に留めます。また、給水器の水は毎日取り換えましょう。</dd>
                     <dt>温度管理</dt><dd>適温は20℃～26℃です。寒さや暑さに非常に弱いため、エアコンや小動物用ヒーターでの24時間管理が必須です。</dd>
                     <dt>注意点</dt><dd>無理に触ったり追いかけないようにしましょう。懐かせようとして無理に捕まえようとすると、恐怖で人間に怯えるようになってしまいます。急に動いたり、大きな音を出したりしないようにしましょう。ケージの近くで急に動いたり、大きな声を出したりするとパニックを起こすことがあります。</dd>
                 </dl>
-             </section>
+            </article>
 
-            <section class="care-point">
-            <!-- 種類別の飼育方法(飼育方法を見るのジャンプ先) -->
-             <h4>種類別の飼育ポイント</h4>
-             <p>それぞれの個性に合わせたお世話をしましょう！</p>
+            <!-- 種類別の飼育方法（ボタンのジャンプ先） -->
+            <div class="breeding-text">
+                <h2>種類別の飼育ポイント</h2>
+                <p>それぞれの個性に合わせたお世話をしましょう！</p>
+            </div>
+            <!-- 飼育方法のカード -->
+            <div class="breedingpoint-card-list">
+                <!-- ゴールデンハムスター -->
+                <article id="golden" class="breedingpoint-card">
+                    <h3>★ゴールデンハムスターの飼育ポイント★</h3>
+                    <dl class="breedingpoint-meta">
+                        <dt>ケージサイズ</dt><dd>体が大きいため、幅60cm以上の広めのケージが必要です。</dd>
+                        <dt>お世話のコツ</dt><dd>縄張り意識が非常に強いため、必ず「1匹ずつ単独」で飼育します。</dd>
+                        <dt>なつかせ方</dt><dd>おっとりした性格なので、おやつを手から与えると早く仲良くなれるかも...？</dd>
+                    </dl>
+                </article>
 
-            <!-- ゴールデンハムスター -->
-             <div id="golden" class="care-card">
-                <h5>ゴールデンハムスターの飼育ポイント</h5>
-                <dl class="care-meta">
-                    <dt>ケージサイズ</dt><dd>体が大きいため、幅60cm以上の広めのケージが必要です。</dd>
-                    <dt>お世話のコツ</dt><dd>縄張り意識が非常に強いため、必ず「1匹ずつ単独」で飼育します。</dd>
-                    <dt>なつかせ方</dt><dd>おっとりした性格なので、おやつを手から与えると早く仲良くなれるかも...？</dd>
-                </dl>
-             </div>
+                <!-- ジャンガリアンハムスター -->
+                <article id="djungarian" class="breedingpoint-card">
+                    <h3>★ジャンガリアンハムスターの飼育ポイント★</h3>
+                    <dl class="breedingpoint-meta">
+                        <dt>ケージサイズ</dt><dd>一般的なハムスター用ケージ（幅45cm程度〜）で飼育可能です。</dd>
+                        <dt>お世話のコツ</dt><dd>基本は単独飼育。寒さに少し弱いので、冬場のヒーター対策が大切です。</dd>
+                        <dt>なつかせ方</dt><dd>比較的おとなしいですが、臆病な面もあるため最初は静かに見守りましょう。</dd>
+                    </dl>
+                </article>
 
-            <!-- ジャンガリアンハムスター -->
-             <div id="djungarian" class="care-card">
-                <h5>ジャンガリアンハムスターの飼育ポイント</h5>
-                <dl class="care-meta">
-                    <dt>ケージサイズ</dt><dd>一般的なハムスター用ケージ（幅45cm程度〜）で飼育可能です。</dd>
-                    <dt>お世話のコツ</dt><dd>基本は単独飼育。寒さに少し弱いので、冬場のヒーター対策が大切です。</dd>
-                    <dt>なつかせ方</dt><dd>比較的おとなしいですが、臆病な面もあるため最初は静かに見守りましょう。</dd>
-                </dl>
-             </div>
+                <!-- ロボロフスキーハムスター -->
+                <article id="roborovski" class="breedingpoint-card">
+                    <h3>★ロボロフスキーハムスターの飼育ポイント★</h3>
+                    <dl class="breedingpoint-meta">
+                        <dt>ケージサイズ</dt><dd>体が小さいですが非常によく動くため、少し広めが理想です。</dd>
+                        <dt>お世話のコツ</dt><dd>すばしっこく脱走しやすいため、ケージの隙間の幅に注意します。</dd>
+                        <dt>なつかせ方</dt><dd>非常に臆病で観賞向きの種類です。手の上に乗せるなどの無理な接触は控えます。</dd>
+                    </dl>
+                </article>
 
-            <!-- ロボロフスキーハムスター -->
-             <div id="roborovski" class="care-card">
-                <h5>ロボロフスキーハムスターの飼育ポイント</h5>
-                <dl class="care-meta">
-                    <dt>ケージサイズ</dt><dd>体が小さいですが非常によく動くため、少し広めが理想です。</dd>
-                    <dt>お世話のコツ</dt><dd>すばしっこく脱走しやすいため、ケージの隙間の幅に注意します。</dd>
-                    <dt>なつかせ方</dt><dd>非常に臆病で観賞向きの種類です。手の上に乗せるなどの無理な接触は控えます。</dd>
-                </dl>
-             </div>
+                <!-- キャンベルハムスター -->
+                <article id="campbell" class="breedingpoint-card">
+                    <h3>★キャンベルハムスターの飼育ポイント★</h3>
+                    <dl class="breedingpoint-meta">
+                        <dt>ケージサイズ</dt><dd>ジャンガリアン同様、標準的なサイズ（幅45cm程度〜）で問題ありません。</dd>
+                        <dt>お世話のコツ</dt><dd>野生味が強く噛みつきやすいため、手袋を用意しておくと安心です。</dd>
+                        <dt>なつかせ方</dt><dd>無理に触ろうとせず、時間をかけて環境と人の声に慣れさせます。</dd>
+                    </dl>
+                </article>
+            </div>
 
-            <!-- キャンベルハムスター -->
-             <div id="Campbell's" class="care-card">
-                <h5>キャンベルハムスターの飼育ポイント</h5>
-                <dl class="care-meta">
-                    <dt>ケージサイズ</dt><dd>ジャンガリアン同様、標準的なサイズ（幅45cm程度〜）で問題ありません。</dd>
-                    <dt>お世話のコツ</dt><dd>野生味が強く噛みつきやすいため、手袋を用意しておくと安心です。</dd>
-                    <dt>なつかせ方</dt><dd>無理に触ろうとせず、時間をかけて環境と人の声に慣れさせます。</dd>
-                </dl>
-             </div>
-
-            </section>
-
-        </div>
+        </section>
 
         <!-- うちのハムスター -->
-        <div id="my-humstar" class="my-humstar">
-            <h2>うちのハムスター</h2>
-            <p>私が飼っているハムスターを紹介します♫</p>
+        <section id="my-humstar" class="my-humstar">
+            <h1>うちのハムスター</h1>
+            <p>私が飼っているハムスターを紹介します♬</p>
 
-            <!-- まめ -->
-             <div class="my-humstar-list">
+            <div class="my-humstar-list">
+                <!-- まめ -->
                 <article class="my-humstar-card">
-                    <h3 class="my-humstar-title">まめ（2025.4～）</h3>
+                    <h2 class="my-humstar-title">まめ（2025.4～）</h2>
                     <!-- 画像スライダー -->
                     <section id="image-carousel-mame" class="splide" aria-label="まめの写真">
                         <div class="splide__track">
@@ -202,8 +206,8 @@
                             </ul>
                         </div>
                     </section>
-
-                    <dl class="my-humstar_meta">
+                    <!-- 情報 -->
+                    <dl class="my-humstar-meta">
                         <dt>性別</dt><dd>男の子</dd>
                         <dt>種類</dt><dd>ゴールデンハムスター（キンクマ）</dd>
                         <dt>性格</dt><dd>基本的に爆睡。いろんな場所で寝る。寝顔がマヌケ。餌をもらっても「もらってないけど？」みたいな顔をする貪欲ハムスター。</dd>
@@ -211,89 +215,98 @@
                         <dt>苦手</dt><dd>ペレット（必ず残す）</dd>
                     </dl>
                 </article>
-             </div>
-            <!-- くろ -->
-             <div class="my-humstar-list">
+
+                <!-- くろ -->
                 <article class="my-humstar-card">
-                    <h3 class="my-humstar-title">くろ（2023.3～2025.4）</h3>
+                    <h2 class="my-humstar-title">くろ（2023.3～2025.4）</h2>
                     <!-- 画像スライダー -->
-                     <section id="image-carousel-kuro" class="splide" aria-label="くろの写真">
+                    <section id="image-carousel-kuro" class="splide" aria-label="くろの写真">
                         <div class="splide__track">
                             <ul class="splide__list">
-                                <li class="splide__slide"><img src="" alt=""><div></div></li>
-                                <li class="splide__slide"><img src="" alt=""><div></div></li>
-                                <li class="splide__slide"><img src="" alt=""><div></div></li>
-                                <li class="splide__slide"><img src="" alt=""><div></div></li>
-                                <li class="splide__slide"><img src="" alt=""><div></div></li>
+                                <li class="splide__slide"><img src="" alt="くろ_"><div></div></li>
+                                <li class="splide__slide"><img src="" alt="くろ_"><div></div></li>
+                                <li class="splide__slide"><img src="" alt="くろ_"><div></div></li>
+                                <li class="splide__slide"><img src="" alt="くろ_"><div></div></li>
+                                <li class="splide__slide"><img src="" alt="くろ_"><div></div></li>
                             </ul>
                         </div>
-                     </section>
-
-                     <dl class="my-humstar_meta">
+                    </section>
+                    <!-- 情報 -->
+                    <dl class="my-humstar-meta">
                         <dt>性別</dt><dd>女の子</dd>
                         <dt>種類</dt><dd>ゴールデンハムスター（クロクマ）</dd>
-                        <dt>性格</dt><dd>出不精ハムスター。エサの時間以外滅多に外に出てこない。</dd>
-                        <dt>好物</dt><dd>豆腐、煮干し</dd>
+                        <dt>性格</dt><dd><dd>出不精ハムスター。エサの時間以外滅多に外に出てこない。</dd>
+                        <dt>好物</dt><dd><dd>豆腐、煮干し</dd>
                         <dt>苦手</dt><dd></dd>
-                     </dl>
+                    </dl>
                 </article>
-             </div>
 
-            <!-- ちょび -->
-             <div class="my-humstar-list">
+                <!-- ちょび -->
                 <article class="my-humstar-card">
-                    <h3 class="my-humstar-title">ちょび（～2023.3）</h3>
+                    <h2 class="my-humstar-title">ちょび（202.～202.）</h2>
                     <!-- 画像スライダー -->
-                     <section id="image-carousel-chobi" class="splide" aria-label="ちょびの写真">
-                         <div class="splide__track">
-                             <ul class="splide__list">
-                                 <li class="splide__slide"><img src="" alt=""><div></div></li>
-                                 <li class="splide__slide"><img src="" alt=""><div></div></li>
-                                 <li class="splide__slide"><img src="" alt=""><div></div></li>
-                                 <li class="splide__slide"><img src="" alt=""><div></div></li>
-                                 <li class="splide__slide"><img src="" alt=""><div></div></li>
-                             </ul>
-                         </div>
-                     </section> 
-
-                     <dl class="my-humstar_meta">
-                        <dt>性別</dt><dd>女の子</dd>
-                        <dt>種類</dt><dd>ゴールデンハムスター（キンクマ）</dd>
-                        <dt>性格</dt><dd>出不精ハムスター。エサの時間以外滅多に外に出てこない。</dd>
-                        <dt>好物</dt><dd>豆腐、煮干し</dd>
-                        <dt>苦手</dt><dd></dd>
-                     </dl>
-                </article>
-             </div>
-
-            <!-- ころ -->
-             <div class="my-humstar-list">
-                <article class="my-humstar-card">
-                    <h3 class="my-humstar-title">ころ（～）</h3>
-                    <!-- 画像スライダー -->
-                     <section id="image-carousel-koro" class="splide" aria-label="ころの写真">
+                    <section id="image-carousel-chobi" class="splide" aria-label="ちょびの写真">
                         <div class="splide__track">
                             <ul class="splide__list">
-                                <li class="splide__slide"><img src="" alt=""><div></div></li>
-                                <li class="splide__slide"><img src="" alt=""><div></div></li>
-                                <li class="splide__slide"><img src="" alt=""><div></div></li>
-                                <li class="splide__slide"><img src="" alt=""><div></div></li>
-                                <li class="splide__slide"><img src="" alt=""><div></div></li>
+                                <li class="splide__slide"><img src="" alt="ちょび_"><div></div></li>
+                                <li class="splide__slide"><img src="" alt="ちょび_"><div></div></li>
+                                <li class="splide__slide"><img src="" alt="ちょび_"><div></div></li>
+                                <li class="splide__slide"><img src="" alt="ちょび_"><div></div></li>
+                                <li class="splide__slide"><img src="" alt="ちょび_"><div></div></li>
                             </ul>
                         </div>
-                     </section>
-
-                     <dl class="my-humstar_meta">
+                    </section>
+                    <!-- 情報 -->
+                    <dl class="my-humstar-meta">
                         <dt>性別</dt><dd>女の子</dd>
                         <dt>種類</dt><dd>ゴールデンハムスター（キンクマ）</dd>
-                        <dt>性格</dt><dd>出不精ハムスター。エサの時間以外滅多に外に出てこない。</dd>
-                        <dt>好物</dt><dd>豆腐、煮干し</dd>
+                        <dt>性格</dt><dd><dd>出不精ハムスター。エサの時間以外滅多に外に出てこない。</dd>
+                        <dt>好物</dt><dd><dd>豆腐、煮干し</dd>
                         <dt>苦手</dt><dd></dd>
-                     </dl>
-                </article>  
-             </div>
-            
-        </div>
-        
+                    </dl>
+                </article>
+
+                <!-- ころ -->
+                <article class="my-humstar-card">
+                    <h2 class="my-humstar-title">ころ（202.～202.）</h2>
+                    <!-- 画像スライダー -->
+                    <section id="image-carousel-koro" class="splide" aria-label="ころの写真">
+                        <div class="splide__track">
+                            <ul class="splide__list">
+                                <li class="splide__slide"><img src="" alt="ころ_"><div></div></li>
+                                <li class="splide__slide"><img src="" alt="ころ_"><div></div></li>
+                                <li class="splide__slide"><img src="" alt="ころ_"><div></div></li>
+                                <li class="splide__slide"><img src="" alt="ころ_"><div></div></li>
+                                <li class="splide__slide"><img src="" alt="ころ_"><div></div></li>
+                            </ul>
+                        </div>
+                    </section>
+                    <!-- 情報 -->
+                    <dl class="my-humstar-meta">
+                        <dt>性別</dt><dd>女の子</dd>
+                        <dt>種類</dt><dd>ゴールデンハムスター（キンクマ）</dd>
+                        <dt>性格</dt><dd><dd>出不精ハムスター。エサの時間以外滅多に外に出てこない。</dd>
+                        <dt>好物</dt><dd><dd>豆腐、煮干し</dd>
+                        <dt>苦手</dt><dd></dd>
+                    </dl>
+                </article>
+            </div>
+        </section>
+
+        <!-- おすすめのイラストレーター -->
+        <section id="SNS" class="SNS">
+            <h1>おすすめSNS</h1>
+            <p>ハムスター好きの方必見！個人的におすすめなハムスターの投稿をしているSNSアカウントを紹介します♡</p>
+            <!--  -->
+            <blockquote class="instagram-media" data-instgrm-captioned data-instgrm-permalink="https://www.instagram.com/p/DYioqz-CXMP/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:16px;"> <a href="https://www.instagram.com/p/DYioqz-CXMP/?utm_source=ig_embed&amp;utm_campaign=loading" style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;" target="_blank"> <div style=" display: flex; flex-direction: row; align-items: center;"> <div style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;"></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;"></div></div></div><div style="padding: 19% 0;"></div> <div style="display:block; height:50px; margin:0 auto 12px; width:50px;"><svg width="50px" height="50px" viewBox="0 0 60 60" version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate(-511.000000, -20.000000)" fill="#000000"><g><path d="M556.869,30.41 C554.814,30.41 553.148,32.076 553.148,34.131 C553.148,36.186 554.814,37.852 556.869,37.852 C558.924,37.852 560.59,36.186 560.59,34.131 C560.59,32.076 558.924,30.41 556.869,30.41 M541,60.657 C535.114,60.657 530.342,55.887 530.342,50 C530.342,44.114 535.114,39.342 541,39.342 C546.887,39.342 551.658,44.114 551.658,50 C551.658,55.887 546.887,60.657 541,60.657 M541,33.886 C532.1,33.886 524.886,41.1 524.886,50 C524.886,58.899 532.1,66.113 541,66.113 C549.9,66.113 557.115,58.899 557.115,50 C557.115,41.1 549.9,33.886 541,33.886 M565.378,62.101 C565.244,65.022 564.756,66.606 564.346,67.663 C563.803,69.06 563.154,70.057 562.106,71.106 C561.058,72.155 560.06,72.803 558.662,73.347 C557.607,73.757 556.021,74.244 553.102,74.378 C549.944,74.521 548.997,74.552 541,74.552 C533.003,74.552 532.056,74.521 528.898,74.378 C525.979,74.244 524.393,73.757 523.338,73.347 C521.94,72.803 520.942,72.155 519.894,71.106 C518.846,70.057 518.197,69.06 517.654,67.663 C517.244,66.606 516.755,65.022 516.623,62.101 C516.479,58.943 516.448,57.996 516.448,50 C516.448,42.003 516.479,41.056 516.623,37.899 C516.755,34.978 517.244,33.391 517.654,32.338 C518.197,30.938 518.846,29.942 519.894,28.894 C520.942,27.846 521.94,27.196 523.338,26.654 C524.393,26.244 525.979,25.756 528.898,25.623 C532.057,25.479 533.004,25.448 541,25.448 C548.997,25.448 549.943,25.479 553.102,25.623 C556.021,25.756 557.607,26.244 558.662,26.654 C560.06,27.196 561.058,27.846 562.106,28.894 C563.154,29.942 563.803,30.938 564.346,32.338 C564.756,33.391 565.244,34.978 565.378,37.899 C565.522,41.056 565.552,42.003 565.552,50 C565.552,57.996 565.522,58.943 565.378,62.101 M570.82,37.631 C570.674,34.438 570.167,32.258 569.425,30.349 C568.659,28.377 567.633,26.702 565.965,25.035 C564.297,23.368 562.623,22.342 560.652,21.575 C558.743,20.834 556.562,20.326 553.369,20.18 C550.169,20.033 549.148,20 541,20 C532.853,20 531.831,20.033 528.631,20.18 C525.438,20.326 523.257,20.834 521.349,21.575 C519.376,22.342 517.703,23.368 516.035,25.035 C514.368,26.702 513.342,28.377 512.574,30.349 C511.834,32.258 511.326,34.438 511.181,37.631 C511.035,40.831 511,41.851 511,50 C511,58.147 511.035,59.17 511.181,62.369 C511.326,65.562 511.834,67.743 512.574,69.651 C513.342,71.625 514.368,73.296 516.035,74.965 C517.703,76.634 519.376,77.658 521.349,78.425 C523.257,79.167 525.438,79.673 528.631,79.82 C531.831,79.965 532.853,80.001 541,80.001 C549.148,80.001 550.169,79.965 553.369,79.82 C556.562,79.673 558.743,79.167 560.652,78.425 C562.623,77.658 564.297,76.634 565.965,74.965 C567.633,73.296 568.659,71.625 569.425,69.651 C570.167,67.743 570.674,65.562 570.82,62.369 C570.966,59.17 571,58.147 571,50 C571,41.851 570.966,40.831 570.82,37.631"></path></g></g></g></svg></div><div style="padding-top: 8px;"> <div style=" color:#3897f0; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:550; line-height:18px;">この投稿をInstagramで見る</div></div><div style="padding: 12.5% 0;"></div> <div style="display: flex; flex-direction: row; margin-bottom: 14px; align-items: center;"><div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(0px) translateY(7px);"></div> <div style="background-color: #F4F4F4; height: 12.5px; transform: rotate(-45deg) translateX(3px) translateY(1px); width: 12.5px; flex-grow: 0; margin-right: 14px; margin-left: 2px;"></div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(9px) translateY(-18px);"></div></div><div style="margin-left: 8px;"> <div style=" background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 20px; width: 20px;"></div> <div style=" width: 0; height: 0; border-top: 2px solid transparent; border-left: 6px solid #f4f4f4; border-bottom: 2px solid transparent; transform: translateX(16px) translateY(-4px) rotate(30deg)"></div></div><div style="margin-left: auto;"> <div style=" width: 0px; border-top: 8px solid #F4F4F4; border-right: 8px solid transparent; transform: translateY(16px);"></div> <div style=" background-color: #F4F4F4; flex-grow: 0; height: 12px; width: 16px; transform: translateY(-4px);"></div> <div style=" width: 0; height: 0; border-top: 8px solid #F4F4F4; border-left: 8px solid transparent; transform: translateY(-4px) translateX(8px);"></div></div></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center; margin-bottom: 24px;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 224px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 144px;"></div></div></a><p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;"><a href="https://www.instagram.com/p/DYioqz-CXMP/?utm_source=ig_embed&amp;utm_campaign=loading" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;" target="_blank">햄확이 | 햄스터확대(@ajigrim)がシェアした投稿</a></p></div></blockquote>
+            <script async src="//www.instagram.com/embed.js"></script>
+            <blockquote class="instagram-media" data-instgrm-captioned data-instgrm-permalink="https://www.instagram.com/p/DSMuy8fCXcq/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:16px;"> <a href="https://www.instagram.com/p/DSMuy8fCXcq/?utm_source=ig_embed&amp;utm_campaign=loading" style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;" target="_blank"> <div style=" display: flex; flex-direction: row; align-items: center;"> <div style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;"></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;"></div></div></div><div style="padding: 19% 0;"></div> <div style="display:block; height:50px; margin:0 auto 12px; width:50px;"><svg width="50px" height="50px" viewBox="0 0 60 60" version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate(-511.000000, -20.000000)" fill="#000000"><g><path d="M556.869,30.41 C554.814,30.41 553.148,32.076 553.148,34.131 C553.148,36.186 554.814,37.852 556.869,37.852 C558.924,37.852 560.59,36.186 560.59,34.131 C560.59,32.076 558.924,30.41 556.869,30.41 M541,60.657 C535.114,60.657 530.342,55.887 530.342,50 C530.342,44.114 535.114,39.342 541,39.342 C546.887,39.342 551.658,44.114 551.658,50 C551.658,55.887 546.887,60.657 541,60.657 M541,33.886 C532.1,33.886 524.886,41.1 524.886,50 C524.886,58.899 532.1,66.113 541,66.113 C549.9,66.113 557.115,58.899 557.115,50 C557.115,41.1 549.9,33.886 541,33.886 M565.378,62.101 C565.244,65.022 564.756,66.606 564.346,67.663 C563.803,69.06 563.154,70.057 562.106,71.106 C561.058,72.155 560.06,72.803 558.662,73.347 C557.607,73.757 556.021,74.244 553.102,74.378 C549.944,74.521 548.997,74.552 541,74.552 C533.003,74.552 532.056,74.521 528.898,74.378 C525.979,74.244 524.393,73.757 523.338,73.347 C521.94,72.803 520.942,72.155 519.894,71.106 C518.846,70.057 518.197,69.06 517.654,67.663 C517.244,66.606 516.755,65.022 516.623,62.101 C516.479,58.943 516.448,57.996 516.448,50 C516.448,42.003 516.479,41.056 516.623,37.899 C516.755,34.978 517.244,33.391 517.654,32.338 C518.197,30.938 518.846,29.942 519.894,28.894 C520.942,27.846 521.94,27.196 523.338,26.654 C524.393,26.244 525.979,25.756 528.898,25.623 C532.057,25.479 533.004,25.448 541,25.448 C548.997,25.448 549.943,25.479 553.102,25.623 C556.021,25.756 557.607,26.244 558.662,26.654 C560.06,27.196 561.058,27.846 562.106,28.894 C563.154,29.942 563.803,30.938 564.346,32.338 C564.756,33.391 565.244,34.978 565.378,37.899 C565.522,41.056 565.552,42.003 565.552,50 C565.552,57.996 565.522,58.943 565.378,62.101 M570.82,37.631 C570.674,34.438 570.167,32.258 569.425,30.349 C568.659,28.377 567.633,26.702 565.965,25.035 C564.297,23.368 562.623,22.342 560.652,21.575 C558.743,20.834 556.562,20.326 553.369,20.18 C550.169,20.033 549.148,20 541,20 C532.853,20 531.831,20.033 528.631,20.18 C525.438,20.326 523.257,20.834 521.349,21.575 C519.376,22.342 517.703,23.368 516.035,25.035 C514.368,26.702 513.342,28.377 512.574,30.349 C511.834,32.258 511.326,34.438 511.181,37.631 C511.035,40.831 511,41.851 511,50 C511,58.147 511.035,59.17 511.181,62.369 C511.326,65.562 511.834,67.743 512.574,69.651 C513.342,71.625 514.368,73.296 516.035,74.965 C517.703,76.634 519.376,77.658 521.349,78.425 C523.257,79.167 525.438,79.673 528.631,79.82 C531.831,79.965 532.853,80.001 541,80.001 C549.148,80.001 550.169,79.965 553.369,79.82 C556.562,79.673 558.743,79.167 560.652,78.425 C562.623,77.658 564.297,76.634 565.965,74.965 C567.633,73.296 568.659,71.625 569.425,69.651 C570.167,67.743 570.674,65.562 570.82,62.369 C570.966,59.17 571,58.147 571,50 C571,41.851 570.966,40.831 570.82,37.631"></path></g></g></g></svg></div><div style="padding-top: 8px;"> <div style=" color:#3897f0; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:550; line-height:18px;">この投稿をInstagramで見る</div></div><div style="padding: 12.5% 0;"></div> <div style="display: flex; flex-direction: row; margin-bottom: 14px; align-items: center;"><div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(0px) translateY(7px);"></div> <div style="background-color: #F4F4F4; height: 12.5px; transform: rotate(-45deg) translateX(3px) translateY(1px); width: 12.5px; flex-grow: 0; margin-right: 14px; margin-left: 2px;"></div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(9px) translateY(-18px);"></div></div><div style="margin-left: 8px;"> <div style=" background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 20px; width: 20px;"></div> <div style=" width: 0; height: 0; border-top: 2px solid transparent; border-left: 6px solid #f4f4f4; border-bottom: 2px solid transparent; transform: translateX(16px) translateY(-4px) rotate(30deg)"></div></div><div style="margin-left: auto;"> <div style=" width: 0px; border-top: 8px solid #F4F4F4; border-right: 8px solid transparent; transform: translateY(16px);"></div> <div style=" background-color: #F4F4F4; flex-grow: 0; height: 12px; width: 16px; transform: translateY(-4px);"></div> <div style=" width: 0; height: 0; border-top: 8px solid #F4F4F4; border-left: 8px solid transparent; transform: translateY(-4px) translateX(8px);"></div></div></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center; margin-bottom: 24px;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 224px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 144px;"></div></div></a><p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;"><a href="https://www.instagram.com/p/DSMuy8fCXcq/?utm_source=ig_embed&amp;utm_campaign=loading" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;" target="_blank">햄확이 | 햄스터확대(@ajigrim)がシェアした投稿</a></p></div></blockquote>
+            <script async src="//www.instagram.com/embed.js"></script>
+            <blockquote class="instagram-media" data-instgrm-captioned data-instgrm-permalink="https://www.instagram.com/p/CvKLlPnPpGP/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:16px;"> <a href="https://www.instagram.com/p/CvKLlPnPpGP/?utm_source=ig_embed&amp;utm_campaign=loading" style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;" target="_blank"> <div style=" display: flex; flex-direction: row; align-items: center;"> <div style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;"></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;"></div></div></div><div style="padding: 19% 0;"></div> <div style="display:block; height:50px; margin:0 auto 12px; width:50px;"><svg width="50px" height="50px" viewBox="0 0 60 60" version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate(-511.000000, -20.000000)" fill="#000000"><g><path d="M556.869,30.41 C554.814,30.41 553.148,32.076 553.148,34.131 C553.148,36.186 554.814,37.852 556.869,37.852 C558.924,37.852 560.59,36.186 560.59,34.131 C560.59,32.076 558.924,30.41 556.869,30.41 M541,60.657 C535.114,60.657 530.342,55.887 530.342,50 C530.342,44.114 535.114,39.342 541,39.342 C546.887,39.342 551.658,44.114 551.658,50 C551.658,55.887 546.887,60.657 541,60.657 M541,33.886 C532.1,33.886 524.886,41.1 524.886,50 C524.886,58.899 532.1,66.113 541,66.113 C549.9,66.113 557.115,58.899 557.115,50 C557.115,41.1 549.9,33.886 541,33.886 M565.378,62.101 C565.244,65.022 564.756,66.606 564.346,67.663 C563.803,69.06 563.154,70.057 562.106,71.106 C561.058,72.155 560.06,72.803 558.662,73.347 C557.607,73.757 556.021,74.244 553.102,74.378 C549.944,74.521 548.997,74.552 541,74.552 C533.003,74.552 532.056,74.521 528.898,74.378 C525.979,74.244 524.393,73.757 523.338,73.347 C521.94,72.803 520.942,72.155 519.894,71.106 C518.846,70.057 518.197,69.06 517.654,67.663 C517.244,66.606 516.755,65.022 516.623,62.101 C516.479,58.943 516.448,57.996 516.448,50 C516.448,42.003 516.479,41.056 516.623,37.899 C516.755,34.978 517.244,33.391 517.654,32.338 C518.197,30.938 518.846,29.942 519.894,28.894 C520.942,27.846 521.94,27.196 523.338,26.654 C524.393,26.244 525.979,25.756 528.898,25.623 C532.057,25.479 533.004,25.448 541,25.448 C548.997,25.448 549.943,25.479 553.102,25.623 C556.021,25.756 557.607,26.244 558.662,26.654 C560.06,27.196 561.058,27.846 562.106,28.894 C563.154,29.942 563.803,30.938 564.346,32.338 C564.756,33.391 565.244,34.978 565.378,37.899 C565.522,41.056 565.552,42.003 565.552,50 C565.552,57.996 565.522,58.943 565.378,62.101 M570.82,37.631 C570.674,34.438 570.167,32.258 569.425,30.349 C568.659,28.377 567.633,26.702 565.965,25.035 C564.297,23.368 562.623,22.342 560.652,21.575 C558.743,20.834 556.562,20.326 553.369,20.18 C550.169,20.033 549.148,20 541,20 C532.853,20 531.831,20.033 528.631,20.18 C525.438,20.326 523.257,20.834 521.349,21.575 C519.376,22.342 517.703,23.368 516.035,25.035 C514.368,26.702 513.342,28.377 512.574,30.349 C511.834,32.258 511.326,34.438 511.181,37.631 C511.035,40.831 511,41.851 511,50 C511,58.147 511.035,59.17 511.181,62.369 C511.326,65.562 511.834,67.743 512.574,69.651 C513.342,71.625 514.368,73.296 516.035,74.965 C517.703,76.634 519.376,77.658 521.349,78.425 C523.257,79.167 525.438,79.673 528.631,79.82 C531.831,79.965 532.853,80.001 541,80.001 C549.148,80.001 550.169,79.965 553.369,79.82 C556.562,79.673 558.743,79.167 560.652,78.425 C562.623,77.658 564.297,76.634 565.965,74.965 C567.633,73.296 568.659,71.625 569.425,69.651 C570.167,67.743 570.674,65.562 570.82,62.369 C570.966,59.17 571,58.147 571,50 C571,41.851 570.966,40.831 570.82,37.631"></path></g></g></g></svg></div><div style="padding-top: 8px;"> <div style=" color:#3897f0; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:550; line-height:18px;">この投稿をInstagramで見る</div></div><div style="padding: 12.5% 0;"></div> <div style="display: flex; flex-direction: row; margin-bottom: 14px; align-items: center;"><div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(0px) translateY(7px);"></div> <div style="background-color: #F4F4F4; height: 12.5px; transform: rotate(-45deg) translateX(3px) translateY(1px); width: 12.5px; flex-grow: 0; margin-right: 14px; margin-left: 2px;"></div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(9px) translateY(-18px);"></div></div><div style="margin-left: 8px;"> <div style=" background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 20px; width: 20px;"></div> <div style=" width: 0; height: 0; border-top: 2px solid transparent; border-left: 6px solid #f4f4f4; border-bottom: 2px solid transparent; transform: translateX(16px) translateY(-4px) rotate(30deg)"></div></div><div style="margin-left: auto;"> <div style=" width: 0px; border-top: 8px solid #F4F4F4; border-right: 8px solid transparent; transform: translateY(16px);"></div> <div style=" background-color: #F4F4F4; flex-grow: 0; height: 12px; width: 16px; transform: translateY(-4px);"></div> <div style=" width: 0; height: 0; border-top: 8px solid #F4F4F4; border-left: 8px solid transparent; transform: translateY(-4px) translateX(8px);"></div></div></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center; margin-bottom: 24px;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 224px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 144px;"></div></div></a><p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;"><a href="https://www.instagram.com/p/CvKLlPnPpGP/?utm_source=ig_embed&amp;utm_campaign=loading" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;" target="_blank">GOTTE(@gottehamham)がシェアした投稿</a></p></div></blockquote>
+            <script async src="//www.instagram.com/embed.js"></script>
+            <blockquote class="instagram-media" data-instgrm-captioned data-instgrm-permalink="https://www.instagram.com/p/CtRX1guvrOG/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:16px;"> <a href="https://www.instagram.com/p/CtRX1guvrOG/?utm_source=ig_embed&amp;utm_campaign=loading" style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;" target="_blank"> <div style=" display: flex; flex-direction: row; align-items: center;"> <div style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;"></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;"></div></div></div><div style="padding: 19% 0;"></div> <div style="display:block; height:50px; margin:0 auto 12px; width:50px;"><svg width="50px" height="50px" viewBox="0 0 60 60" version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate(-511.000000, -20.000000)" fill="#000000"><g><path d="M556.869,30.41 C554.814,30.41 553.148,32.076 553.148,34.131 C553.148,36.186 554.814,37.852 556.869,37.852 C558.924,37.852 560.59,36.186 560.59,34.131 C560.59,32.076 558.924,30.41 556.869,30.41 M541,60.657 C535.114,60.657 530.342,55.887 530.342,50 C530.342,44.114 535.114,39.342 541,39.342 C546.887,39.342 551.658,44.114 551.658,50 C551.658,55.887 546.887,60.657 541,60.657 M541,33.886 C532.1,33.886 524.886,41.1 524.886,50 C524.886,58.899 532.1,66.113 541,66.113 C549.9,66.113 557.115,58.899 557.115,50 C557.115,41.1 549.9,33.886 541,33.886 M565.378,62.101 C565.244,65.022 564.756,66.606 564.346,67.663 C563.803,69.06 563.154,70.057 562.106,71.106 C561.058,72.155 560.06,72.803 558.662,73.347 C557.607,73.757 556.021,74.244 553.102,74.378 C549.944,74.521 548.997,74.552 541,74.552 C533.003,74.552 532.056,74.521 528.898,74.378 C525.979,74.244 524.393,73.757 523.338,73.347 C521.94,72.803 520.942,72.155 519.894,71.106 C518.846,70.057 518.197,69.06 517.654,67.663 C517.244,66.606 516.755,65.022 516.623,62.101 C516.479,58.943 516.448,57.996 516.448,50 C516.448,42.003 516.479,41.056 516.623,37.899 C516.755,34.978 517.244,33.391 517.654,32.338 C518.197,30.938 518.846,29.942 519.894,28.894 C520.942,27.846 521.94,27.196 523.338,26.654 C524.393,26.244 525.979,25.756 528.898,25.623 C532.057,25.479 533.004,25.448 541,25.448 C548.997,25.448 549.943,25.479 553.102,25.623 C556.021,25.756 557.607,26.244 558.662,26.654 C560.06,27.196 561.058,27.846 562.106,28.894 C563.154,29.942 563.803,30.938 564.346,32.338 C564.756,33.391 565.244,34.978 565.378,37.899 C565.522,41.056 565.552,42.003 565.552,50 C565.552,57.996 565.522,58.943 565.378,62.101 M570.82,37.631 C570.674,34.438 570.167,32.258 569.425,30.349 C568.659,28.377 567.633,26.702 565.965,25.035 C564.297,23.368 562.623,22.342 560.652,21.575 C558.743,20.834 556.562,20.326 553.369,20.18 C550.169,20.033 549.148,20 541,20 C532.853,20 531.831,20.033 528.631,20.18 C525.438,20.326 523.257,20.834 521.349,21.575 C519.376,22.342 517.703,23.368 516.035,25.035 C514.368,26.702 513.342,28.377 512.574,30.349 C511.834,32.258 511.326,34.438 511.181,37.631 C511.035,40.831 511,41.851 511,50 C511,58.147 511.035,59.17 511.181,62.369 C511.326,65.562 511.834,67.743 512.574,69.651 C513.342,71.625 514.368,73.296 516.035,74.965 C517.703,76.634 519.376,77.658 521.349,78.425 C523.257,79.167 525.438,79.673 528.631,79.82 C531.831,79.965 532.853,80.001 541,80.001 C549.148,80.001 550.169,79.965 553.369,79.82 C556.562,79.673 558.743,79.167 560.652,78.425 C562.623,77.658 564.297,76.634 565.965,74.965 C567.633,73.296 568.659,71.625 569.425,69.651 C570.167,67.743 570.674,65.562 570.82,62.369 C570.966,59.17 571,58.147 571,50 C571,41.851 570.966,40.831 570.82,37.631"></path></g></g></g></svg></div><div style="padding-top: 8px;"> <div style=" color:#3897f0; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:550; line-height:18px;">この投稿をInstagramで見る</div></div><div style="padding: 12.5% 0;"></div> <div style="display: flex; flex-direction: row; margin-bottom: 14px; align-items: center;"><div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(0px) translateY(7px);"></div> <div style="background-color: #F4F4F4; height: 12.5px; transform: rotate(-45deg) translateX(3px) translateY(1px); width: 12.5px; flex-grow: 0; margin-right: 14px; margin-left: 2px;"></div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(9px) translateY(-18px);"></div></div><div style="margin-left: 8px;"> <div style=" background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 20px; width: 20px;"></div> <div style=" width: 0; height: 0; border-top: 2px solid transparent; border-left: 6px solid #f4f4f4; border-bottom: 2px solid transparent; transform: translateX(16px) translateY(-4px) rotate(30deg)"></div></div><div style="margin-left: auto;"> <div style=" width: 0px; border-top: 8px solid #F4F4F4; border-right: 8px solid transparent; transform: translateY(16px);"></div> <div style=" background-color: #F4F4F4; flex-grow: 0; height: 12px; width: 16px; transform: translateY(-4px);"></div> <div style=" width: 0; height: 0; border-top: 8px solid #F4F4F4; border-left: 8px solid transparent; transform: translateY(-4px) translateX(8px);"></div></div></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center; margin-bottom: 24px;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 224px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 144px;"></div></div></a><p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;"><a href="https://www.instagram.com/p/CtRX1guvrOG/?utm_source=ig_embed&amp;utm_campaign=loading" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;" target="_blank">GOTTE(@gottehamham)がシェアした投稿</a></p></div></blockquote>
+            <script async src="//www.instagram.com/embed.js"></script>
+        </section>
+
     </body>
 </html>
