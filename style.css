@@ -75,7 +75,8 @@ a{
     white-space: nowrap;            /*リンクが折り返されないようにする*/
 }
 
-.nav-list a{
+.nav-list a,
+.SNS-card a{
     position: relative;             /*リンクの下線をアニメーションさせるために必要*/
     font-size: 20px;
     font-weight: 500;
@@ -83,13 +84,15 @@ a{
 }
 
 /* リンクホバー */
-.nav-list a:hover{
+.nav-list a:hover,
+.SNS-card a:hover{
     color: #4da996;
 }
 
 /* リンクホバー時の下線アニメーション */
 /* リンクの下線を隠しておく */
-.nav-list a::after{
+.nav-list a::after,
+.SNS-card a::after{
     content: '';                    /*たとえ中身が空っぽでもcontentを書かないと画面に絶対に表示されない*/
     position: absolute;
     bottom: -6px;                   /*下線の位置を調整*/
@@ -102,7 +105,8 @@ a{
 }
 
 /* マウスを乗せたら下線を伸ばす */
-.nav-list a:hover::after{
+.nav-list a:hover::after,
+.SNS-card a:hover::after{
     width: 100%;                    /*下線の横幅をリンクと同じにする*/
 }
 
@@ -270,19 +274,22 @@ a{
 飼育方法
 ========*/
 
-.breeding-text > p{
+.breeding-text > p,
+.SNS-card p{
   margin: 0 0 40px;
   padding-left: 4%;
   font-size: 18px;
 }
 
-.breeding-text h2{
+.breeding-text h2,
+.SNS-card h2{
   margin: 0 0 10px;
   font-size: 20px;
   padding-top: 20px;
   padding-left: 2%; 
 }
-.breeding-text h2::before{
+.breeding-text h2::before,
+.SNS-card h2::before{
   content: "●";
   padding-right: 5px;
   color: #4da996;
@@ -353,6 +360,52 @@ a{
 
   font-size: 22px;
 }
+
+/*======
+SNS
+========*/
+.SNS-post{
+  display: flex;
+  justify-content: center;
+  margin: 0 60px 0; 
+  gap: 50px;
+}
+
+/* リンクエリア全体の縦並びと左余白の設定 */
+.SNS-links {
+  display: flex;
+  flex-direction: column;           /* 行ごとに縦に並べる */
+  gap: 12px;                        /* 行と行の間のすき間 */
+  margin-left: 4%;
+  margin-bottom: 60px;
+}
+
+/* 1行ごとの設定（丸、文字、URLの縦位置を中央で揃える） */
+.link-item {
+  display: flex;
+  align-items: center;              /* 縦方向の中央揃え */
+}
+
+/* 緑色の丸（●）のスタイル */
+.circle {
+  width: 10px;                     /* 丸の横幅 */
+  height: 10px;                    /* 丸の縦幅 */
+  background-color: #4da996;
+  border-radius: 50%;              /* 正方形をきれいな丸にする */
+  margin-right: 8px;               /* 丸と文字の間のすき間 */
+  flex-shrink: 0;                  /* 画面が狭くなっても丸が潰れないようにする */
+}
+
+/* X（Twitter）などの文字の設定 */
+.label {
+  display: inline-block;
+  width: 120px;                    /* 文字エリアの横幅を固定してURLの開始位置を綺麗に揃えます */
+  margin-right: 25px;              /* 文字とURLの間のすき間 */
+  font-weight: bold;               /* 文字を少し太く */
+  flex-shrink: 0;
+}
+
+
 
 /*======
 スライダー
