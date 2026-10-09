@@ -353,8 +353,8 @@ a{
 
   display: inline-block;
 
-  color: #555;
-  background: #edf8f5;
+  color: #ffffff;
+  background: #4da996;
 
   border-radius: 30px;
 
@@ -405,6 +405,123 @@ SNS
   flex-shrink: 0;
 }
 
+/*======
+うちのハムスター
+========*/
+.my-humstar-list {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 35px;
+    max-width: 1100px;
+    margin: 40px auto 0;
+}
+
+.my-humstar-card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto 1fr;
+    align-items: center;
+    gap: 25px;
+    padding: 0 25px 25px;
+    background-color: #fff;
+    border: 1px solid #4da996;
+    border-radius: 18px;
+    box-shadow: 0 4px 14px rgba(50, 120, 100, 0.08);
+    overflow: hidden;
+}
+
+/* 名前の欄 */
+.my-humstar-title {
+    grid-column: 1 / -1;
+    margin: 0 -25px;
+    padding: 15px 25px;
+    color: #fff;
+    background-color: #4da996;
+    border-bottom: none;
+    align-self: stretch;
+}
+
+/* スライダー */
+.my-humstar-card .splide {
+    width: 100%;
+    max-width: 500px;
+    min-width: 0;
+    margin: 0 auto;
+}
+
+.my-humstar-card .splide__slide img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+/* 写真の説明文 */
+.my-humstar-card .splide__slide div {
+    padding: 8px 0;
+    margin-top: 6px;
+    text-align: center;
+    color: #555;
+    font-size: 0.85rem;
+}
+
+/* スライダーのページ位置を示す丸 */
+.my-humstar-card .splide__pagination {
+    position: relative;
+    bottom: auto;
+    margin-top: 8px;
+}
+
+/* 丸の間隔 */
+.my-humstar-card .splide__pagination__page {
+    margin: 0 4px;
+}
+
+.my-humstar-card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto 1fr;
+    align-items: stretch;
+    gap: 25px;
+    padding: 0 25px 25px;
+    background-color: #fff;
+    border: 1px solid #4da996;
+    border-radius: 18px;
+    box-shadow: 0 4px 14px rgba(50, 120, 100, 0.08);
+    overflow: hidden;
+}
+
+/* プロフィール情報 */
+.my-humstar-meta {
+    display: grid;
+    grid-template-columns: 65px 1fr;
+    row-gap: 15px;
+    margin: 0;
+    padding: 20px;
+    background-color: #f5fbf9;
+    border-radius: 12px;
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+/* 項目名 */
+.my-humstar-meta dt {
+    display: flex;
+    align-items: center;
+    color: #4da996;
+    font-weight: bold;
+}
+
+/* 説明文 */
+.my-humstar-meta dd {
+    display: flex;
+    align-items: center;
+    min-width: 0;
+    margin: 0;
+    padding-left: 20px;
+    border-left: 1px solid #d5ebe5;
+    overflow-wrap: anywhere;
+}
 
 
 /*======
@@ -425,7 +542,7 @@ SNS
 /* スライダー内の画像 */
 .splide__slide img {
     width: 100%;
-    max-height: 250px;
+    max-height: 500px;
     object-fit: contain;
     display: block;
     margin: 0 auto;
