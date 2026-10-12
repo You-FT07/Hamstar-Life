@@ -32,7 +32,7 @@ Hamster Lifeでは、ハムスターの種類ごとの特徴や飼育方法な�
 
 などの特徴をまとめています。
 
-![alt text](image.png)
+![alt text](mages/image.png)
 
 ### 🏠 種類別の飼育方法
 
@@ -44,8 +44,8 @@ Hamster Lifeでは、ハムスターの種類ごとの特徴や飼育方法な�
 
 など、種類によって異なるポイントを分かりやすくまとめています。
 
-![alt text](image-2.png)
-![alt text](image-1.png)
+![alt text](images/image-2.png)
+![alt text](images/image-1.png)
 
 ### 📷 写真・画像
 
