@@ -30,8 +30,9 @@ Hamster Lifeでは、ハムスターの種類ごとの特徴や飼育方法な�
 * 寿命
 * 性格
 
-![alt text](image.png)
 などの特徴をまとめています。
+
+![alt text](image.png)
 
 ### 🏠 種類別の飼育方法
 
