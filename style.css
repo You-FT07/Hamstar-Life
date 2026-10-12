@@ -514,14 +514,13 @@ SNS
 
 /* 説明文 */
 .my-humstar-meta dd {
-    display: flex;
-    align-items: center;
     min-width: 0;
     margin: 0;
     padding-left: 20px;
     border-left: 1px solid #d5ebe5;
-    overflow-wrap: anywhere;
+    overflow-wrap: break-word;
 }
+
 
 
 /*======
