@@ -514,6 +514,8 @@ SNS
 
 /* 説明文 */
 .my-humstar-meta dd {
+    display: flex;
+    align-items: center; /* 説明文を縦方向の中央に配置 */
     min-width: 0;
     margin: 0;
     padding-left: 20px;
